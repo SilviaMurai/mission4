@@ -1,0 +1,62 @@
+.contenedor_crear_cuenta{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.contenedor_crear_cuenta h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 27px;
+}
+.email_crear, .password_crear,.nombre_crear, .apellido_crear{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.email_crear label, .password_crear label,.nombre_crear label, .apellido_crear label{
+    width: 130px;
+}
+.email_crear input, .password_crear input, .apellido_crear input, .nombre_crear input{
+    border-bottom: 1px solid #FF3333;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+
+}
+.ingresar_rec_login{
+    display: flex;
+    margin: 20px auto;
+}
+.ingresar_rec_login button{
+    padding: 10px;
+    background: #FF3333;
+    color: white;
+    border: none;
+}
+.checkbox_login,a{
+display: flex;
+align-items: center;
+margin-left: 10px;
+}
+.contenedor_crear_cuenta a{
+justify-content: center;
+width: 100%;
+display: flex;
+color: #1D84B5;
+text-decoration: none;
+}
+.contenedor_crear_cuenta p {
+    margin: 0px auto;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  text-align: center;
+}
+@media (max-width: 600px) {
+    .contenedor_crear_cuenta{
+        width: 90%;
+    }
+  }
+  

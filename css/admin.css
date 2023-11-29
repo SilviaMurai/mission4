@@ -1,0 +1,90 @@
+.admin__main {
+  /* container 
+    max-width: 1200px;
+    margin: 0 auto;
+    */
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-36);
+  gap: var(--spacing-20);
+  /*align-items: start;*/
+}
+
+.busqueda {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-8);
+}
+
+.busqueda__icon {
+  max-width: 20px;
+  min-width: 20px;
+}
+
+.busqueda .input {
+  border-radius: 8%;
+  border-color: var(--dark-bg-solid);
+  padding: var(--spacing-4);
+  font-size: var(--font-xsmall);
+  color: var(--light-font-solid);
+}
+
+.admin__listado {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-16);
+  border: var(--secondary-solid);
+  border-width: 1%;
+  border-style: solid;
+  padding: var(--spacing-8);
+}
+
+.admin__listado__titulo {
+  display: flex;
+  flex-direction: row;
+  gap: var(--spacing-16);
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-small);
+  font-weight: 700;
+}
+
+.admin__agregar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-self: self-end;
+}
+
+.admin__agregar a{
+  font-size: var(--font-large);
+  font-weight: 700;
+}
+
+
+.admin__grid{
+  display: flex;
+  flex-direction: column; 
+  gap: var(--spacing-8);
+}
+
+.admin__grid__row{
+  display: grid;
+  grid-template-columns: 6rem 1fr 3fr 3fr 4rem 4rem;  /* 4rem o 40px?*/
+  align-items: center;
+  /*font-size: var(--font-xsmall);
+  font-weight: 300;*/
+}
+
+.admin__grid__row p{
+  /*margin-bottom: var(--spacing-4);*/
+  font-size: var(--font-xsmall);
+  font-weight: 300;
+}
+
+.admin__grid__row__header p{
+  /*margin-bottom: var(--spacing-8);*/
+  font-size: var(--font-small);
+  font-weight: 700;
+}
+

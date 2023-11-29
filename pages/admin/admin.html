@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Admin | Funkoshop</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/styles.css" />
+    
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="../../index.html"
+            ><img
+              src="../../images/branding/logo_light_horizontal.svg"
+              alt="isologotipo"
+          /></a>
+        </picture>
+        <ul class="navbar__header">
+          <li class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="../tienda/shop.html"
+              >VER TIENDA<iconify-icon icon="tabler:chevron-down"></iconify-icon
+            ></a>
+            <ul class="submenu">
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Funkos</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">Remeras</a>
+              </li>
+              <li class="submenu__item">
+                <a href="" class="submenu__link">LLaveros</a>
+              </li>
+            </ul>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../admin/admin.html">ADMIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">SALIR</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="admin__main container">
+      <section class="busqueda">
+        <button class="busqueda__submit" type="submit">
+          <img
+            class="busqueda__icon"
+            src="../../images/icons/search_icon.svg"
+            alt="lupa"
+          />
+        </button>
+        <input
+          class="busqueda__buscar"
+          id="busqueda__buscar"
+          type="text"
+          name="busqueda__buscar"
+          placeholder="código, nombre o categoría"
+        />
+      </section>
+
+      <section class="admin__listado">
+        <div class="admin__listado__titulo">
+          <p>LISTADO DE PRODUCTOS</p>
+          <span class="admin__agregar"
+            >AGREGAR<a href="/pages/admin/create.html"
+              ><iconify-icon
+                icon="bxs:plus-square"
+                style="color: #f33"
+              ></iconify-icon></a
+          ></span>
+        </div>
+        <div class="admin__grid">
+          <article class="admin__grid__row admin__grid__row__header">
+            <p>ID</p>
+            <p>Código</p>
+            <p>Nombre del Producto</p>
+            <p>Categoría</p>
+          </article>
+          <article class="admin__grid__row">
+            <p>1</p>
+            <p>STW001001</p>
+            <p>Baby Yoda Blueball</p>
+            <p>STAR WARS</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>2</p>
+            <p>STW001002</p>
+            <p>Boba Fett Fighter</p>
+            <p>STAR WARS</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>3</p>
+            <p>STW001003</p>
+            <p>Luke Skywalker / Grogu</p>
+            <p>STAR WARS</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>4</p>
+            <p>STW001004</p>
+            <p>Stormtrooper Lightsaber</p>
+            <p>STAR WARS</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>5</p>
+            <p>PKM001001</p>
+            <p>Charmander Smiley</p>
+            <p>POKEMON</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>6</p>
+            <p>PKM001002</p>
+            <p>Dragonite Hi!</p>
+            <p>POKEMON</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>7</p>
+            <p>PKM001003</p>
+            <p>Pidgeotto Flying</p>
+            <p>POKEMON</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>8</p>
+            <p>PKM001004</p>
+            <p>Pikachu Smiley</p>
+            <p>POKEMON</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>9</p>
+            <p>PKM001005</p>
+            <p>Vulpix Fancy</p>
+            <p>POKEMON</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>10</p>
+            <p>HPT001001</p>
+            <p>Harry Potter & Hegwid</p>
+            <p>HARRY POTTER</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>11</p>
+            <p>HPT001002</p>
+            <p>Herminione Ball Dress</p>
+            <p>HARRY POTTER</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>12</p>
+            <p>HPT001003</p>
+            <p>Luna Lovegood Lion Mask</p>
+            <p>HARRY POTTER</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+          <article class="admin__grid__row">
+            <p>13</p>
+            <p>HPT001004</p>
+            <p>Snape Patronus</p>
+            <p>HARRY POTTER</p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="mdi:pencil"
+                  style="color: #1d84b5"
+                ></iconify-icon
+              ></a>
+            </p>
+            <p>
+              <a href=""
+                ><iconify-icon
+                  icon="heroicons-solid:trash"
+                  style="color: #f33"
+                ></iconify-icon
+              ></a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__footer">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../tienda/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../admin/register.html"
+              >REGISTRARSE</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../admin/login.html">LOGIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../admin/contact.html">CONTACTO</a>
+          </li>
+        </ul>
+        <picture
+          ><img src="../../images/branding/isotype.svg" alt=""
+        /></picture>
+      </nav>
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+.contenedor_login{
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.contenedor_login h1{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 27px;
+}
+.email_login, .password_login{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.email_login label, .password_login label{
+    width: 100px;
+}
+.email_login input, .password_login input{
+    border-bottom: 1px solid #FF3333;
+    border-right: none;
+    border-top: none;
+    border-left: none;
+
+}
+.ingresar_rec_login{
+    margin-top: 20px;
+    display: flex;
+    margin: 0 auto;
+}
+.ingresar_rec_login button{
+    padding: 10px;
+    background: #FF3333;
+    color: white;
+    border: none;
+}
+.checkbox_login{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+}
+.contenedor_login a{
+justify-content: center;
+width: 100%;
+display: flex;
+color: #1D84B5;
+text-decoration: none;
+margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .contenedor_login{
+        width: 90%;
+    }
+  }
+  

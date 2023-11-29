@@ -1,0 +1,171 @@
+/* clases *************************************************************************** */
+/* o en styles.css container clase general como dijo en video mission? */
+.hf_container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* header ***************************************************************/
+
+.header{
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-36);
+}
+
+.header,
+.footer {
+  font-family: var(--alternative-font);
+  color: var(--light-font-solid);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--spacing-8);
+  align-items: center;
+  /*align-items: flex-start;*/
+}
+
+.navbar__logo {
+  max-width: 300px;
+  min-width: 100px;
+}
+
+.navbar__menuicon {
+  display: none;
+  font-size: var(--font-jumbo);
+  text-align: center;
+}
+
+.navbar__menuicon:hover {
+  background-color: var(--primary-900);
+}
+
+.navbar__menuicon:hover .navbar__header {
+  visibility: visible;
+}
+
+.navbar__carticon {
+  max-width: 20px;
+  min-width: 20px;
+}
+
+.navbar__header {
+  display: flex;
+  flex-direction: row;
+  /*align-items: flex-start;*/
+  gap: var(--spacing-20);
+  /*w3c overflow: hidden; */
+  /*background-color: hsl(132, 94%, 49%);*/
+}
+
+.navbar__footer {
+  display: flex;
+  flex-direction: column;
+  /*align-items: flex-end;*/
+  /*background-color: hsl(132, 94%, 49%);*/
+}
+
+/* .navbar__item{
+}
+*/
+
+.navbar__link {
+  font-size: var(--font-small);
+  padding: var(--spacing-4) var(--spacing-16);
+  display: inline-block;
+  transition: background 0.3s ease-in-out;
+  position: relative;
+}
+
+.navbar__link:hover {
+  background-color: var(--primary-900);
+}
+
+.with-icon {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.with-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  width: 300px; /* PERO tamaño fijo */
+  position: absolute;
+  background-color: var(--dark-bg-solid);
+  z-index: 3;
+}
+
+.submenu__link {
+  display: block;
+  padding: var(--spacing-8) var(--spacing-16);
+  font-size: var(--font-medium);
+  transition: background 0.3s ease-in-out;
+}
+
+.submenu__link:hover {
+  background-color: var(--primary-900);
+}
+
+/* footer ************************************************************************  */
+.footer {
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-36);
+}
+
+.footer__copy {
+  margin-top: var(--spacing-4);
+  text-align: center;
+}
+
+/* animations ******************************************************************** */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* media ************************************************************************** */
+@media screen and (max-width: 480px) {
+  /*600*/
+  img {
+    width: 25%;
+  }
+  .navbar {
+   align-items: flex-start;
+  }
+  .navbar__link {
+    font-size: var(--font-xsmall);
+  }
+  .navbar__menuicon {
+    display: block;
+  }
+  .navbar__header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-8);
+    /*align-content: flex-start;*/
+  }
+  .navbar__menuicon:hover .navbar__header {
+    visibility: visible;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  img {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1200px) {  /*1024*/
+  img {
+    width: 100%;
+  }
+}
