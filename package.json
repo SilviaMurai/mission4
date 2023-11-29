@@ -1,0 +1,18 @@
+{
+  "name": "challengeintegrador",
+  "version": "1.0.0",
+  "description": "Curso23580 - Proyecto integrador 21/08/2023 inicio git github index.html ... 05/10/2023 header - footer para index, tienda y admin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
