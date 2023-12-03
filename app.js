@@ -1,3 +1,8 @@
+//como en 29.ppt 
+//require('dotenv').config();
+//const PORT = process.env.PORT;
+const PORT = 4000;
+
 const express = require('express');
 const app = express();              /* crea instancia de servidor: una sola vez  aplicacion! */
 
@@ -13,6 +18,17 @@ app.use('/admin',adminRoutes);
 app.use('/auth',authRoutes);
 app.use('/shop',shopRoutes);
 
-app.get('/ping',(req,res) => res.send('pong'));
+//app.get('/ping',(req,res) => res.send('pong'));
 
-app.listen(4000, () => console.log(`Servidor corriendo en http://localhost:4000`));
+// FALTABA npm install ejs
+
+// como Funko Talia
+// Configuración del motor de vistas
+app.set('view engine', 'ejs');
+app.set('views', __dirname + '/src/views');    //app.set('views', 'views'); 
+
+app.use((req, res, next) => {
+    res.status(404).send(`Recurso no encontrado en `+`http://localhost:`+PORT);
+   });
+
+app.listen(PORT, () => console.log(`Servidor corriendo en http://localhost:`+PORT));

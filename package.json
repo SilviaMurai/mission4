@@ -4,12 +4,16 @@
   "description": "Curso23580 - Proyecto integrador 21/08/2023 inicio git github index.html ... 05/10/2023 header - footer para index, tienda y admin",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
     "express": "^4.18.2"
   },
   "devDependencies": {

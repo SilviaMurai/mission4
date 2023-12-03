@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Register | Funkoshop</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/crear_cuenta.css" />
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+  
+   <%- include( '../../partials/header-admin') %>
+
+   <main class="main-container">
+    <div class="contenedor_crear_cuenta">
+      <h1>CREA TU CUENTA</h1>
+      <p>Completa el formulario para ser parte del mundo de los Funkos</p>
+      <div class="nombre_crear">
+          <label for="">Nombre:</label>
+          <input type="text" placeholder="John">
+      </div>
+      <div class="apellido_crear">
+          <label for="">Apellido:</label>
+          <input type="text" placeholder="Doe">
+      </div>
+      <div class="email_crear">
+          <label for="">Email:</label>
+          <input type="email" placeholder="johndoe@correo.com">
+      </div>
+      <div class="password_crear">
+          <label for="">Contraseña:</label>
+          <input type="password" placeholder="">
+      </div>
+      <div class="password_crear">
+          <label for="">Repita contraseña:</label>
+          <input type="password">
+      </div>
+      <div class="ingresar_rec_login">
+              <button>INGRESAR</button>
+              <div class="checkbox_login">
+                  <input type="checkbox">
+                  <label for="">Acepto</label>
+          </div>
+          <a href="">Terminos y condiciones</a>
+      </div>
+    
+      
+  </div>
+   </main>
+
+   <%- include( '../../partials/footer') %>
+
+   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+  </body>
+</html>
