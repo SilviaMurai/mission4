@@ -15,11 +15,12 @@
 
     <main class="admin__main container">
       <section class="busqueda">
+       <form action="/admin/search" method="POST">
         <button class="busqueda__submit" type="submit">
           <img
             class="busqueda__icon"
             src="../../images/icons/search_icon.svg"
-            alt="lupa"
+            alt="buscar"
           />
         </button>
         <input
@@ -27,8 +28,9 @@
           id="busqueda__buscar"
           type="text"
           name="busqueda__buscar"
-          placeholder="código, nombre o categoría"
-        />
+          placeholder="código, nombre o licencia" 
+        />  <!-- licencia o categoría? -->
+       </form>
       </section>
 
       <section class="admin__listado">
@@ -48,294 +50,24 @@
             <p>ID</p>
             <p>Código</p>
             <p>Nombre del Producto</p>
-            <p>Categoría</p>
+            <p>Licencia</p>
+            <!-- <p>Categoría</p> PERO en Figma esta categoria en vez de licencia -->
           </article>
-          <article class="admin__grid__row">
-            <p>1</p>
-            <p>STW001001</p>
-            <p>Baby Yoda Blueball</p>
-            <p>STAR WARS</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>2</p>
-            <p>STW001002</p>
-            <p>Boba Fett Fighter</p>
-            <p>STAR WARS</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>3</p>
-            <p>STW001003</p>
-            <p>Luke Skywalker / Grogu</p>
-            <p>STAR WARS</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>4</p>
-            <p>STW001004</p>
-            <p>Stormtrooper Lightsaber</p>
-            <p>STAR WARS</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>5</p>
-            <p>PKM001001</p>
-            <p>Charmander Smiley</p>
-            <p>POKEMON</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>6</p>
-            <p>PKM001002</p>
-            <p>Dragonite Hi!</p>
-            <p>POKEMON</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>7</p>
-            <p>PKM001003</p>
-            <p>Pidgeotto Flying</p>
-            <p>POKEMON</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>8</p>
-            <p>PKM001004</p>
-            <p>Pikachu Smiley</p>
-            <p>POKEMON</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>9</p>
-            <p>PKM001005</p>
-            <p>Vulpix Fancy</p>
-            <p>POKEMON</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>10</p>
-            <p>HPT001001</p>
-            <p>Harry Potter & Hegwid</p>
-            <p>HARRY POTTER</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>11</p>
-            <p>HPT001002</p>
-            <p>Herminione Ball Dress</p>
-            <p>HARRY POTTER</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>12</p>
-            <p>HPT001003</p>
-            <p>Luna Lovegood Lion Mask</p>
-            <p>HARRY POTTER</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
-          <article class="admin__grid__row">
-            <p>13</p>
-            <p>HPT001004</p>
-            <p>Snape Patronus</p>
-            <p>HARRY POTTER</p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="mdi:pencil"
-                  style="color: #1d84b5"
-                ></iconify-icon
-              ></a>
-            </p>
-            <p>
-              <a href=""
-                ><iconify-icon
-                  icon="heroicons-solid:trash"
-                  style="color: #f33"
-                ></iconify-icon
-              ></a>
-            </p>
-          </article>
+          <% items.forEach(item => { %>
+            <article class="admin__grid__row">   
+                <p><%= item.product_id %></p>
+                <p><%= item.sku %></p>
+                <p><%= item.product_name %></p>
+                <p><%= item.licence_name %></p>
+                <!-- <p><%= item.category_name %></p> PERO en Figma esta categoria en vez de licencia -->
+                <p><a href="/admin/edit/<%= item.product_id %>"><iconify-icon icon="mdi:pencil" style="color: #1d84b5;"></iconify-icon></a></p>
+                <form action="/admin/delete/<%= item.product_id %>?_method=DELETE" method="POST">
+                    <button class="admin-table__btn-delete" type="submit">
+                        <iconify-icon icon="heroicons-solid:trash" style="color: #f33;"></iconify-icon>
+                    </button>
+                </form>
+            </article>
+          <% }); %>
         </div>
       </section>
     </main>
