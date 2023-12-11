@@ -61,8 +61,9 @@
                 <p><%= item.licence_name %></p>
                 <!-- <p><%= item.category_name %></p> PERO en Figma esta categoria en vez de licencia -->
                 <p><a href="/admin/edit/<%= item.product_id %>"><iconify-icon icon="mdi:pencil" style="color: #1d84b5;"></iconify-icon></a></p>
-                <form action="/admin/delete/<%= item.product_id %>?_method=DELETE" method="POST">
-                    <button class="admin-table__btn-delete" type="submit">
+                <!-- <form action="/admin/delete/<%= item.product_id %>?_method=DELETE" method="POST"> -->
+                <form action="/admin/delete/<%= item.product_id %>" method="POST">
+                  <button class="admin-table__btn-delete" type="submit">
                         <iconify-icon icon="heroicons-solid:trash" style="color: #f33;"></iconify-icon>
                     </button>
                 </form>
