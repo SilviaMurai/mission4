@@ -1,14 +1,14 @@
 const items = require('../models/itemsModels');
 
-const getItems = async (params) => {    //FALTA ver params
+const getItems = async (params) => {    
  return await items.getItems(params);
 };
 
-const getItemsBuscados = async (params) => {    //FALTA ver params
+const getItemsBuscados = async (params) => {    
  return await items.getItemsBuscados(params);
 };
 
-const getItem = async (params) => {    //FALTA ver params
+const getItem = async (params) => {    
     return await items.getItem(params);
    };
 

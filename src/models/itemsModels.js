@@ -29,20 +29,15 @@ const getItems = async (params) => {
 const getItemsBuscados = async (params) => {
   try 
   {const buscar = params.buscar;
-   const [rows] = await conn.query('SELECT product.*, category.category_name, licence.licence_name FROM product LEFT JOIN category ON product.category_id = category.category_id LEFT JOIN licence ON product.licence_id = licence.licence_id WHERE product_id LIKE "%'+buscar+'%" OR product_name LIKE "%'+buscar+'%" OR licence_name LIKE "%'+buscar+'%";');
-   //return rows;
+   const [rows] = await conn.query(`SELECT product.*, category.category_name, licence.licence_name FROM product LEFT JOIN category ON product.category_id = category.category_id LEFT JOIN licence ON product.licence_id = licence.licence_id WHERE sku LIKE "%${buscar}%" OR product_name LIKE "%${buscar}%" OR licence_name LIKE "%${buscar}%";`);
    const response = {
     isError: false,
     data: rows
    };
-//console.log(rows);   
-//console.log(rows.length);
-//console.log('SELECT product.*, category.category_name, licence.licence_name FROM product LEFT JOIN category ON product.category_id = category.category_id LEFT JOIN licence ON product.licence_id = licence.licence_id WHERE product_id LIKE "%'+buscar+'%" OR product_name LIKE "%'+buscar+'%" OR licence_name LIKE "%'+buscar+'%";');
    return response;
   } 
   catch (err) 
-  {
-  //throw err;
+  {//throw err;
    const error = {
     isError: true,
     message: `Productos NO encontrados: ${err}.`

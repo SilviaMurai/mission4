@@ -15,7 +15,7 @@
 
     <main class="admin__main container">
       <section class="busqueda">
-       <form action="/admin/search" method="POST">
+       <form action="/admin" method="POST" enctype="application/x-www-form-urlencoded">
         <button class="busqueda__submit" type="submit">
           <img
             class="busqueda__icon"
@@ -27,7 +27,7 @@
           class="busqueda__buscar"
           id="busqueda__buscar"
           type="text"
-          name="busqueda__buscar"
+          name="buscar"
           placeholder="código, nombre o licencia" 
         />  <!-- licencia o categoría? -->
        </form>

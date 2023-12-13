@@ -3,7 +3,18 @@ require('dotenv').config();
 const PORT = process.env.PORT;    //const PORT = 4000;
 
 const express = require('express');
-const app = express();              /* crea instancia de servidor: una sola vez  aplicacion! */
+var app = express();              /* crea instancia de servidor: una sola vez  aplicacion! */
+
+//para procesar datos enviados desde el formulario
+// npm install --save body-parser
+const bodyParser = require('body-parser')
+app.use(bodyParser.json() );                        // to support JSON-encoded bodies
+app.use(bodyParser.urlencoded({extended: true}));   // to support URL-encoded bodies
+
+//middleware
+app.use(express.json());                            // to support JSON-encoded bodies
+app.use(express.urlencoded({ extended: true}));      // to support URL-encoded bodies  //express body-parser deprecated
+
 
 const mainRoutes = require('./src/routes/mainRoutes');
 const adminRoutes = require('./src/routes/adminRoutes');
@@ -30,12 +41,15 @@ app.set('views',path.join(__dirname,'/src/views'));  //app.set('views', __dirnam
 
 app.get("/", (req, res) => {res.render(path.resolve(__dirname, '../views/home'))});  //clase 34
 
-app.use(express.json());       // to support JSON-encoded bodies
-//app.use(express.urlencoded()); // to support URL-encoded bodies  //body-parser deprecated
-//app.use(express.bodyParser());
-   
-//const bodyParser = require('body-parser');
-//app.use(bodyParser.urlencoded({ extended: true }))
+// Handling Post request 
+app.post('/admin', function(req, res) {
+    console.log('POST parameters received are: ',req.body); //llega cuando submit: POST parameters received are:  { busqueda__buscar: 'pokemon' }
+    ////res.redirect('/');
+    //res.render('/admin'),
+    //{
+     //busqueda_buscar: req.body.busqueda_buscar
+    //}
+});        
 
 app.use((req, res, next) => {
     res.status(404).send(`Recurso no encontrado en `+`http://localhost:`+PORT);
