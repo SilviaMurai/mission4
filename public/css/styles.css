@@ -4,8 +4,20 @@
 @import url("https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.theme.min.css");
 
 @import url("../css/header-footer.css"); 
-/*@import url("slider.css");*/
-@import url("../css/admin.css"); 
+
+/*@import url("slider.css"); esta en index.css */
+
+/*
+@import url("../css/index.css"); 
+@import url("../css/styleshop.css"); 
+@import url("../css/carrito.css"); 
+
+@import url("../css/login.css"); 
+@import url("../css/crear_cuenta.css"); 
+
+@import url("../css/admin.css");
+@import url("../css/creatstyle.css");
+*/
 
 :root {
   /* palette */

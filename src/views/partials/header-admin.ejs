@@ -1,4 +1,17 @@
-   <header class="header">
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title><%=title%> | Funkoshop</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../../css/styles.css" />  
+    <link rel="stylesheet" href="../../css/<%=stylecss%>" />    <!-- ../css/admin.css -->
+  </head>
+  <body>
+    
+    <header class="header">
       <nav class="navbar hf_container">
         <picture class="navbar__logo">
           <a href="/home"
@@ -12,13 +25,13 @@
             <a class="navbar__link with-icon" href="/shop">VER TIENDA<iconify-icon icon="tabler:chevron-down"></iconify-icon></a>
             <ul class="submenu">
               <li class="submenu__item">
-                <a href="" class="submenu__link">Funkos</a>
+                <a href="/shop?filter=funkos" class="submenu__link">Funkos</a>
               </li>
               <li class="submenu__item">
-                <a href="" class="submenu__link">Remeras</a>
+                <a href="/shop?filter=remeras" class="submenu__link">Remeras</a>
               </li>
               <li class="submenu__item">
-                <a href="" class="submenu__link">LLaveros</a>
+                <a href="/shop?filter=llaveros" class="submenu__link">LLaveros</a>
               </li>
             </ul>
           </li>

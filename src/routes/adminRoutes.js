@@ -2,15 +2,12 @@ const express = require('express');
 const router = express.Router();
 const adminControllers = require('../controllers/adminControllers');
 
-
 //const uploadFiles = require('../middlewares/uploadFiles');
 //const validateInput = require('../middlewares/validator');
 
 //npm install --save express-validator
-const {body}= require ('express-validator');
+const {body}= require ('express-validator');      //12/12/2023
 
-
-// /admin/
 router.get('/', adminControllers.admin);
 router.post('/', adminControllers.adminsearch);     //'/search/:buscar'
   router.get('/create', adminControllers.create);
